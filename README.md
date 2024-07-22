@@ -1,4 +1,4 @@
-# Attestation junior (Platformeco developer)
+# Attestation middle (Platformeco developer)
 By Vihlyaev Vladimir
 
 _Made with **reveal.js**_
