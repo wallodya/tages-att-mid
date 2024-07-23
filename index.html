@@ -31,7 +31,7 @@
       <section>
         <section data-markdown>
           #### YouTrack
-          
+
         </section>
 
         <section>
@@ -58,7 +58,7 @@
             <img class="fragment r-frame" src="public/images/yt/assignee-priority.png" style="height: 500px;" />
           </div>
         </section>
-        
+
         <section data-markdown>
           #### Почта
         </section>
@@ -71,23 +71,58 @@
             <img class="fragment r-frame" src="public/images/mail/mail-rules-2.png" style="height: 300px;" />
           </div>
         </section>
-        
-        
+
+
         <section data-markdown>
           #### Git
         </section>
-        
+
         <section>
           <div class="r-stack">
             <img class="fragment r-frame" src="public/images/git/gitlab-submodule.png" style="height: 300px;" />
             <img class="fragment r-frame" src="public/images/git/diff-name-only.png" style="height: 100px;" />
           </div>
         </section>
-        
+
+        <section>
+          Интерактивный ребейз (+ squash)
+          <div class="r-stack">
+            <div class="fragment">
+              <pre>
+                      <code data-trim data-line-numbers="1-2|3|4|5">
+                          $ git log --oneline releasev0.57.0..
+                          $ git log --oneline releasev0.57.0..HEAD
+                          $ git rebase -i 6b70a2b^
+                          $ git log --oneline releasev0.57.0..
+                          $ git push -f origin
+                      </code>
+                  </pre>
+              <img class="" src="public/images/git/log-delta-out.png" style="height: 100px;" />
+            </div>
+            <img class="fragment r-frame" src="public/images/git/rebase-vim.png" style="height: 500px;" />
+          </div>
+        </section>
+
+        <section>
+          Логи (работа с историей гита)
+          <div>
+            <pre>
+                <code data-trim data-line-numbers="1-2|3-4|5-6">
+                    $ git log --oneline releasev0.57.3..HEAD
+                    $ git log --oneline releasev0.57.3..feat/FLORA-20365
+                    $ git log --oneline releasev0.57.3..feat/FLORA-20472 \
+                     -- ./definitions/def_updateOrder 
+                    $ git log --oneline releasev0.57.3...feat/FLORA-20472
+                    $ git log --oneline origin/feat/FLORA-20472...origin/releasev0.57.3
+                </code>
+            </pre>
+          </div>
+        </section>
+
         <section data-markdown>
           #### Kubernetes
         </section>
-        
+
         <section>
           <div class="r-stack">
             <img class="fragment r-frame" src="public/images/infra/orders-docker.png" style="height: 500px;" />
@@ -104,7 +139,7 @@
             <img class="fragment r-frame" src="public/images/infra/postman-test-2.png" style="height: 600px;" />
           </div>
         </section>
-        
+
         <section data-markdown>
           #### Soft skills
         </section>
@@ -134,11 +169,11 @@
             <img class="fragment r-frame" src="public/images/tasks/le-to-pay-tasks.png" style="height: 600px;" />
           </div>
         </section>
-        
+
         <section data-markdown>
           #### PostgreSQL
         </section>
-        
+
         <section>
           <div class="r-stack">
             <img class="fragment r-frame" src="public/images/pg/pg-erd-mr.png" style="height: 250px;" />
@@ -146,10 +181,10 @@
             <img class="fragment r-frame" src="public/images/pg/pg-index.png" style="height: 350px;" />
           </div>
         </section>
-        
+
         <section data-markdown>
           #### Oracle
-        </section>    
+        </section>
 
         <section>
           <div class="r-stack">
@@ -157,11 +192,11 @@
             <img class="fragment r-frame" src="public/images/oracle/ora-clob-2.png" style="height: 200px;" />
           </div>
         </section>
-        
+
         <section data-markdown>
           #### OS/Elasticsearch
         </section>
-        
+
         <section>
           <div class="r-stack">
             <!-- TODO correct screenshots -->
@@ -174,11 +209,11 @@
             <img class="fragment r-frame" src="public/images/os/oa-res-expl-4.png" style="height: 600px;" />
           </div>
         </section>
-        
+
         <section data-markdown>
           #### Redis
         </section>
-        
+
         <section>
           <div class="r-stack">
             <img class="fragment r-frame" src="public/images/redis/redis-sadd.png" style="height: 200px;" />
